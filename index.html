@@ -20,38 +20,42 @@
     <div class="mainBack">
       <div class="card">
         <!-- image partie haute de la card -->
-      <div class="imagetop">
-        <img src="images/illustration-hero.svg" alt="image danseur écoutant mp3">
-      </div>
+         
+        <img class="imagetop" src="images/illustration-hero.svg" alt="image danseur écoutant mp3">
+          
 
 
-      <!-- zone de texte centrale -->
-      <h1>Order Summary</h1>
+              <!-- zone de texte centrale -->
+        <div class="centralCard">
+            <div class="centerTop">  
+                <h2>Order Summary</h2>
 
-      <p>You can now listen to millions of songs, audiobooks, and podcasts on any
-      device anywhere you like!</p>
+                <p>You can now listen to millions of songs, audiobooks, and podcasts on any
+                device anywhere you like!</p>
+              </div>
+
+              <!-- bloc central plan de paiement -->
+            <div class="centerBlock">
+                <img class="logoNote" src="images/icon-music.svg" alt="logo notes musique" >
+      
+                <div class="annualPlan">
+                     <h3>Annual Plan</h3>
+                     <p class="prix">$59.99/year</p>
+                 </div>
+
+                <a class="changeLink" href="" class="change">Change</a>
+            </div>
+
+                <!-- bouton  de paiement bleu -->
+          <button class="paiement">Proceed to Payment</button>
       
 
-      <!-- bloc central plan de paiement -->
-      <div class="centerBlock">
-      <img src="images/icon-music.svg" alt="logo notes musique" class="logoNote">
-      
-      <div class="annualPlan"><h3>Annual Plan</h3>
-      <p class="prix">$59.99/year</p>
+               <!-- lien d'annulation -->
+            <a href="" class="cancel"> Cancel Order</a>
+
+        </div>
+
       </div>
-
-      <a href="" class="change">Change</a>
-      </div>
-
-      <!-- bouton  de paiement bleu -->
-      Proceed to Payment
-
-      <!-- lien d'annulation -->
-      Cancel Order
-
-
-
-    </div>
 
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
@@ -60,5 +64,7 @@
     </div>
   </div>
  
+
+  
 </body>
 </html>

@@ -1,27 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
 /* ******************background************************ */
 
 .fullPage {
+  display: flex;
+  justify-content: center;
+  
   height: 100vh;
-  background-color: rgb(224, 232, 255);
+  width: 1440px;
+  margin: auto;
+  background-color: hsl(225, 100%, 94%);
   text-align: center;
+  margin: 0px;
+  font-family: 'Red Hat Display', sans serif;
+  font-size: 16px;
 }
 
 .mainBack {
   height: 100vh;
+  width: 1440px;
+  margin: auto;
   background-image: url(images/pattern-background-desktop.svg);
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   z-index: 1;
+  display: flex;
+  justify-content: center;
 }
 
 /* ****************************image partie haute************************** */
 
 .card {
-  padding-top: 75px;
-  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 670px;
+  width: 420px;
   margin: auto;
-  border-radius: 20px 20px 0 0;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.card p {
+  color: hsl(224, 23%, 55%)
+
 }
 
 .imagetop {
-  border-radius: 30px;
+  width: 420px;
+  border-radius: 15px 15px 0 0;
+}
+
+/* ************** partie centrale card***************** */
+
+.centralCard {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
+
+.card h2 h3 {
+  font-weight: 1200;
+  margin:0;
+}
+
+.centerTop {
+  width:70%;
+  height: 150px;
+  margin: auto;
+  font-weight: 500;
+  
+  }
+
+
+.centerBlock {
+  margin: 25px auto;
+  border-radius: 15px;
+ display: flex;
+ height: 75px;
+ width: 70%;
+ padding: 5px 15px;
+ justify-content: space-around;
+ align-items: center;
+ background-color: hsl(225, 100%, 98%);
+}
+
+.logoNote {
+height: 45px;
+}
+
+.annualPlan {
+  line-height: 5px;
+  padding-right: 35px;
+}
+
+.changeLink {
+  font-weight: 700;
+  font-size: 14px;
+  color: hsl(245, 75%, 52%)
+
+}
+
+/* *****************bouton bleu paiement ******************************/
+
+.paiement {
+  margin: 35px;
+  height: 45px;
+  width: 77%;
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 5px 15px 25px -15px  hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 700;
+  margin: auto;
+  border-radius: 10px 10px 10px 10px;
+}
+
+
+/* ***********************lien cancel******************* */
+
+.cancel {
+  margin: 40px;
+  color:hsl(224, 23%, 55%);
+  font-weight: 900;
+
 }
