@@ -1,19 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
 
+body {
+  margin: 0px auto;
+}
 /* ******************background************************ */
 
 .fullPage {
   display: flex;
   justify-content: center;
-  
+
   height: 100vh;
-  width: 1440px;
-  margin: auto;
+  width: 100vw;
+  margin: 0px auto;
   background-color: hsl(225, 100%, 94%);
   text-align: center;
-  margin: 0px;
-  font-family: 'Red Hat Display', sans serif;
+  margin: auto;
+  font-family: "Red Hat Display", sans serif;
   font-size: 16px;
 }
 
@@ -25,6 +31,7 @@
   background-repeat: repeat-x;
   z-index: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -34,16 +41,18 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 670px;
+  height: 66vh;
+  min-height: 650px;
+  max-height: 700px;
   width: 420px;
+  min-width: 180px;
   margin: auto;
   background-color: white;
   border-radius: 15px 15px 15px 15px;
 }
 
 .card p {
-  color: hsl(224, 23%, 55%)
-
+  color: hsl(224, 23%, 55%);
 }
 
 .imagetop {
@@ -54,40 +63,37 @@
 /* ************** partie centrale card***************** */
 
 .centralCard {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card h2 h3 {
   font-weight: 1200;
-  margin:0;
+  margin: 0;
 }
 
 .centerTop {
-  width:70%;
+  width: 70%;
   height: 150px;
   margin: auto;
   font-weight: 500;
-  
-  }
-
+}
 
 .centerBlock {
   margin: 25px auto;
   border-radius: 15px;
- display: flex;
- height: 75px;
- width: 70%;
- padding: 5px 15px;
- justify-content: space-around;
- align-items: center;
- background-color: hsl(225, 100%, 98%);
+  display: flex;
+  height: 75px;
+  width: 70%;
+  padding: 5px 15px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
 }
 
 .logoNote {
-height: 45px;
+  height: 45px;
 }
 
 .annualPlan {
@@ -98,30 +104,53 @@ height: 45px;
 .changeLink {
   font-weight: 700;
   font-size: 14px;
-  color: hsl(245, 75%, 52%)
-
+  color: hsl(245, 75%, 52%);
 }
 
 /* *****************bouton bleu paiement ******************************/
 
 .paiement {
-  margin: 35px;
+  margin: 15px auto;
   height: 45px;
-  width: 77%;
+  width: 70%;
   background-color: hsl(245, 75%, 52%);
-  box-shadow: 5px 15px 25px -15px  hsl(245, 75%, 52%);
+  box-shadow: 5px 15px 25px -15px hsl(245, 75%, 52%);
   color: white;
   font-weight: 700;
-  margin: auto;
   border-radius: 10px 10px 10px 10px;
 }
-
 
 /* ***********************lien cancel******************* */
 
 .cancel {
-  margin: 40px;
-  color:hsl(224, 23%, 55%);
+  margin: 25px;
+  color: hsl(224, 23%, 55%);
   font-weight: 900;
+}
 
+
+
+/* *******************hover********************* */
+.hovercards:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+  transition: 0.8s ease-in-out;
+}
+
+
+/* ********************logo footer***************** */
+
+.attribution {
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  
+}
+
+.nervod {
+  height: 15px;
+  margin-left: 8px;
+  margin-top: 3px;
 }
