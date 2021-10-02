@@ -1,0 +1,64 @@
+@media  screen and (max-width: 500px) {
+
+.fullPage {
+    font-size: 12px;
+}
+
+.card {
+    min-height: 450px;
+    max-height: 500px;
+    width: 320px;
+    min-width: 130px;
+}
+
+.imagetop {
+    width: 320px;
+  }
+
+
+/* ************** partie centrale card***************** */
+
+.centerTop {
+    width: 65%;
+    height: 75px;
+    margin-bottom: 15px;
+  }
+
+  .centerBlock {
+    height: 45px;
+    width: 65%;
+  }
+
+  .logoNote {
+    height: 35px;
+  }
+  
+  .annualPlan h3 {
+    font-size: 12px;
+  }
+
+  .changeLink {
+    font-size: 12px;
+  }
+
+/* *****************bouton bleu paiement ******************************/
+
+.paiement {
+    height: 40px;
+    width: 75%;
+    margin-top: 2px;
+  }
+
+  .cancel {
+    margin: 15px;
+  }
+
+
+  .attribution {
+    height: 25px;
+    margin-bottom: 20px;
+    
+  }
+
+   
+}
